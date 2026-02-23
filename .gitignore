@@ -1,0 +1,56 @@
+# ── Секреты и окружение ─────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.p12
+secrets/
+
+# ── Python ──────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ── Node / Frontend ─────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+*.tsbuildinfo
+
+# ── Docker ──────────────────────────────────────────────────────
+# (сами docker-compose файлы коммитятся)
+
+# ── Загруженные пользователем файлы ─────────────────────────────
+uploads/
+media/
+
+# ── Логи ────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── IDE ─────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# ── Alembic (версии коммитятся, offline-скрипты нет) ────────────
+backend/migrations/versions/__pycache__/
